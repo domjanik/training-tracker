@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
 # Logs
 logs
 *.log
@@ -82,6 +94,11 @@ out
 .nuxt
 dist
 
+# Nuxt dev/build outputs
+.output
+.data
+.nitro
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -137,3 +154,13 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files (duplicate kept for safety)
+.env
+.env.*
+!.env.example
