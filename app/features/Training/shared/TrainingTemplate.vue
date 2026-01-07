@@ -17,7 +17,14 @@ const {header} = defineProps<{
     <template #footer>
       <div>
         <UButton v-if="state === 'not-started'">Rozpocznij trening</UButton>
-        <UButton v-else-if="state === 'in-progress'">Zapisz trening</UButton>
+        <div v-else-if="state === 'in-progress'" class="flex flex-col">
+            <UInput label="Notatki do treningu" type="textarea" rows="3" />
+            <UButton >Zapisz trening</UButton>
+        </div>
+        
+        <div v-else-if="state === 'completed'">
+            <p>Trening zakończony. Świetna robota!</p>
+        </div>
     </div>
     </template>
   </UCard>

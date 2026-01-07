@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import type { ITraining } from '~/models/ITraining';
 import TrainingTemplate from '../shared/TrainingTemplate.vue';
-const { selectedDate } = defineProps<{
-  selectedDate: string;
+const { selectedDate, trainingData } = defineProps<{
+  selectedDate: Date;
+  trainingData: ITraining;
 }>();
 
 </script>
